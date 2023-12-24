@@ -6,9 +6,9 @@ const user_controller_1 = require("../controllers/user.controller");
 const router = (0, express_1.Router)();
 exports.userRoutes = router;
 const userController = new user_controller_1.UserController();
-router.get('/', userController.getAllUsers);
-router.get('/:id', userController.getUserById);
-router.post('/', userController.createUser);
-router.put('/:id', userController.updateUser);
-router.delete('/:id', userController.deleteUser);
+router.get('/', userController.search);
+router.get('/:id', userController.getById);
+router.post('/', userController.create);
+router.put('/:id', userController.update);
+router.delete('/:id', userController.delete);
 //# sourceMappingURL=user.routes.js.map
