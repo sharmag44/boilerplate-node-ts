@@ -1,3 +1,4 @@
+import * as dotenv from 'dotenv';
 import app from './config/express.config';
 import { userRoutes } from './routes/user.routes';
 import connectToDatabase from './config/mongoose.config';
